@@ -1,0 +1,270 @@
+body{
+  background-color: seashell;
+  border: 3px solid red;
+}
+/* Logo ---------------------------*/
+.top img{
+  width: 90px;
+  height: 100px;
+  bottom: 100px;
+  margin-left: 100px;
+}
+/* Navigation ---------------------------*/
+nav ul{
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  padding-left: 55%;
+}
+nav li{
+  margin-right: 15px;
+}
+nav a{
+  font-size: 1.3em;
+  color: #181818;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #760001; 
+  border-bottom: 3px solid #760001;
+}
+
+/*  Meilleur film --------------------*/
+.classement-film img{
+  width: 210px;
+  height: 300px;
+  border: 2px solid palevioletred;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Meilleur-film{
+  width: 120px;
+  height: 40px;
+  line-height: 35px;
+  font-size: 1.3em;
+  border: 2px solid palevioletred;
+  text-align: left;
+}
+#imgMeilleurFilm{
+  width: 185px;
+  height: 100%;
+  top: 0%;
+  border: 2px solid palevioletred;
+  padding-left: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  slider1 films --------------------*/
+/* #img1, #img2, #img3, #img4{
+  width: 180px;
+  height: 280px;
+  /* line-height: 35px;
+  font-size: 1.3em;
+  border: 2px solid palevioletred;
+  padding: 15px;
+  cursor: pointer;
+  border: 2px dashed #9d1a1a;
+  display : inline-block; */
+
+img:hover{
+  cursor: pointer;
+  border: 2px dashed #9d1a1a;
+}
+
+/* img{
+  width: 190px;
+  height: 223px;
+  display : inline-block;
+} */
+
+/* fenêtre modale --------------------*/
+/* bouton ouvrir fenêtre modal -------*/
+.modal-btn{
+  /* background-color: #9d1a1a; */
+  background-color: #9d1a1a;
+  border:none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 26px;
+  background: #9d1a1a;
+  border: 2px dashed #9d1a1a;
+  transition: 0,4s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  bottom: 10px;
+}
+.modal-btn:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+/* éléments communs à toutes les boites modales (avec bouton ou click sur image) ---- */
+.modal-container{
+  display: none;
+  /* position: fixed; */
+  top: 14px;
+}
+.modal-container.active{
+  display: block;
+}
+.overlay{
+  top: 0px;
+  background: #333333d3;  /* fond opaque */
+}
+.modal{
+  width: 35%;
+  height: 255px;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 110%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  background: papayawhip;
+  z-index: 1;
+  /* overflow: scroll; */
+  overflow: hidden;
+}
+.close-modal{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #9d1a1a;
+  color: #fff;
+}
+/* texte slider film _______________________________________________________*/
+.classement-film1, .classement-film2, .classement-film3, .classement-film4{
+  width: 210px;
+  height: 45px;
+  text-align: left;
+  line-height: 2px;
+  margin-left: 1px;
+  font-size: 1.3em;
+  display: inline-block;
+  position: absolute;
+}
+.classement-film1{
+  border: 2px solid green;
+}
+.classement-film2{
+  border: 2px solid orange;
+}
+.classement-film3{
+  border: 2px solid blue;
+}
+.classement-film4{
+  border: 2px solid blueviolet;
+}
+/* ____________________________________________________________________*/
+.slider-wrap1, .slider-wrap2, .slider-wrap3, .slider-wrap4{
+  position: relative;
+  overflow: hidden ;
+  height: 274px;
+}
+.slider-main1, .slider-main2, .slider-main3, .slider-main4{
+  position: absolute;
+  width: 57%;
+  height: 277px;
+  left: 265px;
+}
+.slider-main1{
+  border: 2px solid green;
+}
+.slider-main2{
+  border: 2px solid orange;
+}
+.slider-main3{
+  border: 2px solid blue;
+}
+.slider-main4{
+  border: 2px solid blueviolet;
+}
+
+/* .item1, .item2, .item3, .item4{
+  display : inline-block; 
+  affichage des images sur une seule ligne
+  position: relative;
+  width: 70%;
+  height: 272px;
+}  */
+
+/* img{
+  width: 165px;
+  height: 269px;
+} */
+
+.btn-area{
+  position: absolute;
+  bottom: 0;
+  /* left: 34%; */
+  width: 70%;
+}
+
+.btn1-left, .btn1-right, .btn2-left, .btn2-right, .btn3-left, .btn3-right, .btn4-left, .btn4-right,.btn{
+  border:none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 26px;
+  background: #9d1a1a;
+  border: 2px dashed #9d1a1a;
+  transition: 0.4s;
+}
+.btn1-left, .btn2-left, .btn3-left, .btn4-left{
+  left : 150px;
+  position: relative;
+}
+.btn1-right, .btn2-right, .btn3-right, .btn4-right,.btn{
+  right: -955px;
+  position :relative
+}
+
+.btn1-right:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+.btn1-left:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+
+.btn2-right:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+.btn2-left:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+
+.btn3-right:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+.btn3-left:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+
+.btn4-right:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+.btn4-left:hover{
+  background: #fff;
+  color: #9d1a1a;
+}
+

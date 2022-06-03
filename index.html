@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>caroussel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top">
+      <p><img src="logo.jpg" class = "logo" alt="logo"></p>
+  </div>
+  <nav>
+      <ul>
+          <li><a href="#Accueil"><strong> Accueil </a></li></strong>
+          <li><a href="#Catégories"><strong> Catégories </a></li></strong>      
+      </ul>
+  </nav>
+
+  <!-- -------------------------------- -->
+  <div class="classement-film">
+    <div id="Meilleur-film"> <strong>Meilleur film</strong></div>  
+  </div>
+
+  <div id="imgMeilleurFilm"></div> 
+  <button class="modal-btn modal-trigger">open</button>
+  
+    <!-- modal commune ------------------------------ -->
+  <div class="modal-container">
+    <div class="overlay modal-trigger"></div>  <!-- pour cliquer en dehores et fermer-->
+    <div class="modal" id="modal">
+        <button class="close-modal modal-trigger">Fermer</button>
+        <div class="content" id="content">
+        </div>	
+    </div>
+  </div>
+
+  <section class="justStreamIt1">
+    <div class="slider-wrap1"> 
+      <div class="classement-film1">
+        <p><strong>Films les mieux notés</strong></p>
+      </div>
+      <div class="slider-main1" id="slider-main1">
+        <div class="modal-trigger" id="img1"></div>
+      </div>
+      <div class="btn-area">
+        <button type="button" class="btn1-left">Prev</button>
+        <button type="button" class="btn1-right">Next</button>
+      </div> 
+    </div> 
+    <p><br></p>
+  </section>
+
+  <section class="justStreamIt2">
+    <div class="slider-wrap2">   
+      <div class="classement-film2">
+        <p><strong>Films d'aventure</strong></p>
+      </div>  
+      <div class="slider-main2" id="slider-main2">
+        <div class="modal-trigger" id="img2"></div>
+      </div>
+      <div class="btn-area">
+        <button type="button" class="btn2-left">Prev</button>
+        <button type="button" class="btn2-right">Next</button>
+      </div>
+    </div>
+    <p><br></p>
+  </section>
+
+  <section class="justStreamIt3">
+    <div class="slider-wrap3">  
+      <div class="classement-film3">
+        <p><strong>Films Family</strong></p>
+      </div>   
+      <div class="slider-main3" id="slider-main3">
+        <div class="modal-trigger" id="img3"></div>   
+      </div>  
+      <div class="btn-area">
+        <button type="button" class="btn3-left">Prev</button>
+        <button type="button" class="btn3-right">Next</button>
+      </div>
+    </div>   
+    <p><br></p>
+  </section>
+
+  <section class="justStreamIt4">
+    <div class="slider-wrap4">     
+      <div class="classement-film4">
+        <p><strong>Films d'Action</strong></p>
+      </div>
+      <div class="slider-main4" id="slider-main4">
+        <div class="modal-trigger" id="img4"></div>
+      </div>  
+      <div class="btn-area">
+        <button type="button" class="btn4-left">Prev</button>
+        <button type="button" class="btn4-right">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
